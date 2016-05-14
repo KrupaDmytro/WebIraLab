@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<style>
+    a {
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    }
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-blue.css">
+<body>
+
+
+<header class="w3-container w3-orange">
+        <div class="w3-row">
+        <!-- Page content -->
+             <div class="w3-opennav w3-col l1 m1" onclick="w3_open()">
+                 <h2>☰</h2>
+             </div>
+
+             <div class="w3-container w3-col w3-center l6 m6">
+                 <h2>My LabShop version 1.0</h2>
+             </div>
+    </div>
+</header>
+
+<nav class="w3-sidenav w3-white w3-animate-left" style="display:none;z-index:4">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav">Закрити</a>
+    <a href="#">Стрічка</a>
+    <a href="#">Останній випуск</a>
+    <a href="#">Статті</a>
+    <a href="#">Львівські новини</a>
+    <a href="#">Оголошення</a>
+</nav>
+
+<!-- Overlay -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer"></div>
+
+<div class="w3-container" id="itemcontainer" style="width:75%">
+
+    <div class="w3-col">
+
+        <h2>Вимог до переказів валюти українцями поменшало</h2>
+        <br>
+
+         НБУ спростив процедуру валютних переказiв. Надсилати доляри та євро стало простiше.
+        <hr>
+    </div>
+    <div class="w3-col">
+
+        <h2>Кінець мрії про Європу </h2>
+        <br>
+
+        Несподівана заява президента Єврокомісії стала холодним душем для багатьох українців Жан-Клод Юнкер уперше публічно визнав,
+        що у найближчі 20 - 25 років Україна не зможе набути членство в Євросоюзі.
+        <hr>
+
+    </div>
+
+    <div class="w3-col">
+
+        <a href="FotoOfPeopels.html"><h2>Як найкраще фотографувати людей, які сплять.</h2></a> <div class="w3-round-jumbo w3-tag w3-red" h2>ФОТО</div></h2>
+        <br>
+
+        Видання National Geographic показало найкращі фото, на яких продемонстровані люди, котрі сплять.
+        <hr>
+    </div>
+</div>
+
+
+
+
+
+<footer class="w3-container w3-aqua">
+    <p class="input verify:error">Інформація для цього сайту була взята з
+        <a href="http://symvolika.com.ua/">http://expres.ua/</a> </p>
+</footer>
+
+</body>
+
+
+
+<script>
+    function w3_open() {
+        document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+        document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+        document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+    }
+
+
+</script>
+</html>
